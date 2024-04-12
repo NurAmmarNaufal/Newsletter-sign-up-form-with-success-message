@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url(./assets/fonts/Roboto-Regular.ttf);
+        }
+
+        body {
+            background-color: #36384d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: myFont;
+        }
+
+        .container {
+            background-color: white;
+            width: 350px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .btn {
+            background-color: #36384d;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: rgb(255, 82, 122);
+            background: linear-gradient(90deg, rgba(255, 82, 122, 1) 0%, rgba(254, 105, 60, 1) 100%);
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn p {
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./assets/images/icon-list.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <strong>aha@gmail.com</strong>. Please open it and click the button
+            inside to confirm your subcription.</p>
+        <div class="btn">
+            <p>Dismis message</p>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn')
+
+        btn.addEventListener('click', () => {
+            window.location.href = 'index.html'
+        })
+    </script>
+</body>
+
+</html>
